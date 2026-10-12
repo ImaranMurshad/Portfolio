@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Imaran Murshad | Cloud & Software Developer</title>
+  <title>Imaran Murshad | Cloud & Software Developer in Dublin</title>
+  <meta name="description" content="MSc Cloud Computing student in Dublin with 2+ years of enterprise software experience. AWS projects: Cloud ERP, CI/CD pipelines, Kinesis and PySpark analytics.">
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Fraunces:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -288,7 +289,7 @@
       I spent <strong>2+ years at Capgemini</strong> building enterprise SAP systems for global clients —
       then relocated to <strong>Dublin, Ireland</strong> to pursue an MSc in Cloud Computing at NCI.
       I bridge solid backend engineering with modern cloud-native architecture.
-      <strong>Open to part-time &amp; internship roles — 20 hrs/week.</strong>
+      <strong>Open to internship and part-time roles now (20 hrs/week), and full-time roles from Jan 2027.</strong>
     </p>
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary">See My Work →</a>
@@ -308,8 +309,8 @@
         <div class="stat-label">Client Apps Built</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number">3°</div>
-        <div class="stat-label">Degrees Earned</div>
+        <div class="stat-number">4</div>
+        <div class="stat-label">AWS Projects Deployed</div>
       </div>
     </div>
   </div>
@@ -331,7 +332,7 @@
           I grew up in India — earning a <strong>BCA then MCA with First Class Honours</strong> — before landing my first 
           big break at <strong>Capgemini Technology Services</strong>. For over two years I worked as a Software Analyst 
           and SAP ABAP Developer, writing enterprise programs that ran inside real organisations. I learned what 
-          production software actually means: reliability under pressure, zero-downtime expectations, and collaborating 
+          production software actually means: reliability under pressure, strict delivery timelines, and collaborating 
           across cross-functional teams of consultants, QA engineers, and project managers.
         </p>
         <div class="quote">
@@ -344,7 +345,7 @@
           cloud security. I want to build things that scale.
         </p>
         <p>
-          Between degrees and corporate roles, I also ran a <strong>small software startup</strong>, delivering 
+          After Capgemini, I also ran a <strong>small software startup</strong>, delivering 
           custom ERP and billing applications to local businesses. That experience — being the developer, 
           project manager, and client relationship all at once — made me a sharper engineer and a better 
           communicator. I captained my college cricket team too, which taught me more about leadership under 
@@ -512,7 +513,7 @@
       <div class="sk-title">Cloud & AWS Services</div>
       <div class="sk-list">
         <span class="sp">EC2</span><span class="sp">Amazon Kinesis</span><span class="sp">S3</span>
-        <span class="sp">IAM</span><span class="sp">Elastic IP</span><span class="sp">IaaS</span>
+        <span class="sp">IAM</span><span class="sp">RDS</span><span class="sp">CloudWatch</span><span class="sp">Elastic IP</span><span class="sp">IaaS</span>
         <span class="sp">PaaS</span><span class="sp">Cloud Architecture</span>
       </div>
     </div>
@@ -617,40 +618,48 @@
     <div class="sec-line"></div>
   </div>
   <div class="projects-grid">
-          <!-- PRJ 001 — Fog/Edge -->
-      <div class="pc p1 reveal">
-        <div class="ph"><div class="pnum">PRJ — 001</div><div class="pico">🎢</div></div>
-        <div class="ptitle">Theme Park Ride Monitoring System</div>
-        <div class="p-module">MSc · Fog &amp; Edge Computing · Deployed on AWS EC2</div>
-        <div class="pdesc">
-          A <strong>real-time safety monitoring platform</strong> built on a full
-          Sensor → Edge → Fog → Cloud architecture. Virtual ride sensors stream speed, temperature,
-          vibration, passenger load, and brake status over <strong>MQTT</strong>, filtered at the Edge,
-          health-scored at the Fog, and visualised on a live <strong>Django dashboard</strong> with async alerts via Celery + Redis.
-        </div>
-        <ul class="phi">
-          <li><strong>Edge layer</strong> — rule-based anomaly detection &amp; risk scoring, reduces unnecessary traffic before forwarding</li>
-          <li><strong>Fog layer</strong> — rolling window aggregation per sensor type, computes overall Ride Health Score</li>
-          <li><strong>Cloud backend</strong> — Django REST API, async Celery + Redis tasks, PDF/CSV exports, filterable analytics</li>
-          <li>Deployed to <strong>AWS EC2</strong> with Gunicorn + Nginx + systemd, auto CI/CD via GitHub Actions</li>
-        </ul>
-        <div class="pfoot">
-          <span class="tag tc">Python</span><span class="tag tc">MQTT</span><span class="tag tc">Django</span>
-          <span class="tag tc">Celery</span><span class="tag tc">Redis</span><span class="tag tc">AWS EC2</span>
-          <span class="tag tc">Nginx</span><span class="tag tc">GitHub Actions</span><span class="tag tc">ReportLab</span>
-        </div>
-        
-        <!--  <a href="https://github.com/ImaranMurshad/Fog_Egde_Computing_Project" target="_blank" class="p-link">GitHub →</a>-->
-          <a href="https://github.com/ImaranMurshad/Fog_Egde_Computing_Project" target="_blank" class="pgit">
+    <div class="pc p5 reveal">
+  <div class="ph"><div class="pnum">PRJ — 001</div><div class="pico">☁️</div></div>
+  <div class="ptitle">Cloud ERP System</div>
+  <div class="pdesc">A cloud-native <strong>Enterprise Resource Planning</strong> web app built with Django and deployed on AWS. Manages products, customers, and invoices with automatic S3 backups, CloudWatch monitoring, and a PostgreSQL database on RDS.</div>
+  <ul class="phi">
+    <li>Full product, customer & invoice management with CSV export and import</li>
+    <li>Custom AWS utility libraries: S3Manager, CloudWatchLogger, RDSStats, IAMCredentialCheck</li>
+    <li>All data exports auto-uploaded to S3; business metrics pushed to CloudWatch</li>
+    <li>Reusable auth module published as a standalone PyPI package (v0.1.2)</li>
+  </ul>
+  <div class="pfoot">
+    <span class="tag tp">Django</span><span class="tag tp">Python</span><span class="tag tp">AWS S3</span>
+    <span class="tag tp">CloudWatch</span><span class="tag tp">RDS</span><span class="tag tp">EC2</span>
+    <a href="https://github.com/ImaranMurshad/Cloud_Base_ERP_System_Repo.git" target="_blank" rel="noopener" class="pgit">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
       View on GitHub ↗
     </a>
-        
-      </div>
+  </div>
+</div>
 
-      <!-- PRJ 002 — Banking Lambda -->
-      <div class="pc p2 reveal">
-        <div class="ph"><div class="pnum">PRJ — 002</div><div class="pico">🏦</div></div>
+    <div class="pc p6 reveal">
+  <div class="ph"><div class="pnum">PRJ — 002</div><div class="pico">🗳️</div></div>
+  <div class="ptitle">Online Voting System — DevOpsSec</div>
+  <div class="pdesc">A secure, role-based digital voting platform built with Django and deployed on <strong>AWS EC2</strong> with a fully automated GitHub Actions CI/CD pipeline — developed for the DevOpsSec module at NCI Dublin.</div>
+  <ul class="phi">
+    <li>Three-role RBAC system: Admin, Election Host, and Voter with enforced approval workflow</li>
+    <li>Ballot integrity guaranteed at the database level with a <code>unique_together</code> constraint</li>
+    <li>Full CI/CD: every push to main auto-deploys via GitHub Actions → EC2 → Gunicorn → Nginx</li>
+    <li>Security hardened: CSRF, PBKDF2-SHA256 hashing, Bandit, Flake8, and Pylint integrated</li>
+  </ul>
+  <div class="pfoot">
+    <span class="tag tg">Django</span><span class="tag tg">Python</span><span class="tag tg">AWS EC2</span>
+    <span class="tag tg">GitHub Actions</span><span class="tag tg">Nginx</span><span class="tag tg">Gunicorn</span>
+    <a href="https://github.com/ImaranMurshad/OnlineVotingSystem_Code.git" target="_blank" rel="noopener" class="pgit">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      View on GitHub ↗
+    </a>
+  </div>
+</div>
+
+    <div class="pc p2 reveal">
+        <div class="ph"><div class="pnum">PRJ — 003</div><div class="pico">🏦</div></div>
         <div class="ptitle">Banking Transaction Analytics Pipeline</div>
         <div class="p-module">MSc · Scalable Cloud Programming · Lambda Architecture on AWS</div>
         <div class="pdesc">
@@ -673,16 +682,43 @@
           <span class="tag tp">Nginx</span><span class="tag tp">GitHub Actions</span>
         </div>
 
-          <a href="https://github.com/ImaranMurshad/Scalable_Computing_Project.git" target="_blank" class="pgit">
+          <a href="https://github.com/ImaranMurshad/Scalable_Computing_Project.git" target="_blank" rel="noopener" class="pgit">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
       View on GitHub ↗
     </a>
         
       </div>
 
-      <!-- PRJ 003 — Cloud ML -->
-      <div class="pc p3 reveal">
-        <div class="ph"><div class="pnum">PRJ — 003</div><div class="pico">🤖</div></div>
+    <div class="pc p1 reveal">
+        <div class="ph"><div class="pnum">PRJ — 004</div><div class="pico">🎢</div></div>
+        <div class="ptitle">Theme Park Ride Monitoring System</div>
+        <div class="p-module">MSc · Fog &amp; Edge Computing · Deployed on AWS EC2</div>
+        <div class="pdesc">
+          A <strong>real-time safety monitoring platform</strong> built on a full
+          Sensor → Edge → Fog → Cloud architecture. Virtual ride sensors stream speed, temperature,
+          vibration, passenger load, and brake status over <strong>MQTT</strong>, filtered at the Edge,
+          health-scored at the Fog, and visualised on a live <strong>Django dashboard</strong> with async alerts via Celery + Redis.
+        </div>
+        <ul class="phi">
+          <li><strong>Edge layer</strong> — rule-based anomaly detection &amp; risk scoring, reduces unnecessary traffic before forwarding</li>
+          <li><strong>Fog layer</strong> — rolling window aggregation per sensor type, computes overall Ride Health Score</li>
+          <li><strong>Cloud backend</strong> — Django REST API, async Celery + Redis tasks, PDF/CSV exports, filterable analytics</li>
+          <li>Deployed to <strong>AWS EC2</strong> with Gunicorn + Nginx + systemd, auto CI/CD via GitHub Actions</li>
+        </ul>
+        <div class="pfoot">
+          <span class="tag tc">Python</span><span class="tag tc">MQTT</span><span class="tag tc">Django</span>
+          <span class="tag tc">Celery</span><span class="tag tc">Redis</span><span class="tag tc">AWS EC2</span>
+          <span class="tag tc">Nginx</span><span class="tag tc">GitHub Actions</span><span class="tag tc">ReportLab</span>
+        </div>
+          <a href="https://github.com/ImaranMurshad/Fog_Egde_Computing_Project" target="_blank" rel="noopener" class="pgit">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      View on GitHub ↗
+    </a>
+        
+      </div>
+
+    <div class="pc p3 reveal">
+        <div class="ph"><div class="pnum">PRJ — 005</div><div class="pico">🤖</div></div>
         <div class="ptitle">Cloud ML — Product Demand Prediction Dashboard</div>
         <div class="p-module">MSc · Cloud Machine Learning · National College of Ireland</div>
         <div class="pdesc">
@@ -704,57 +740,12 @@
           <span class="tag tr">Matplotlib</span><span class="tag tr">Seaborn</span><span class="tag tr">ReportLab</span>
         </div>
        <!-- <div class="p-links">-->
-          <a href="https://github.com/ImaranMurshad/Cloud_ML_Project.git" target="_blank" class="pgit">
+          <a href="https://github.com/ImaranMurshad/Cloud_ML_Project.git" target="_blank" rel="noopener" class="pgit">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
       View on GitHub ↗
     </a>
        <!-- </div>-->
       </div>
-
-
-
-
-
-
-    <div class="pc p5 reveal">
-  <div class="ph"><div class="pnum">PRJ — 004</div><div class="pico">☁️</div></div>
-  <div class="ptitle">Cloud ERP System</div>
-  <div class="pdesc">A cloud-native <strong>Enterprise Resource Planning</strong> web app built with Django and deployed on AWS. Manages products, customers, and invoices with automatic S3 backups, CloudWatch monitoring, and a PostgreSQL database on RDS.</div>
-  <ul class="phi">
-    <li>Full product, customer & invoice management with CSV export and import</li>
-    <li>Custom AWS utility libraries: S3Manager, CloudWatchLogger, RDSStats, IAMCredentialCheck</li>
-    <li>All data exports auto-uploaded to S3; business metrics pushed to CloudWatch</li>
-    <li>Reusable auth module published as a standalone PyPI package (v0.1.2)</li>
-  </ul>
-  <div class="pfoot">
-    <span class="tag tp">Django</span><span class="tag tp">Python</span><span class="tag tp">AWS S3</span>
-    <span class="tag tp">CloudWatch</span><span class="tag tp">RDS</span><span class="tag tp">EC2</span>
-    <a href="https://github.com/ImaranMurshad/Cloud_Base_ERP_System_Repo.git" target="_blank" class="pgit">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-      View on GitHub ↗
-    </a>
-  </div>
-</div>
-
-<div class="pc p6 reveal">
-  <div class="ph"><div class="pnum">PRJ — 005</div><div class="pico">🗳️</div></div>
-  <div class="ptitle">Online Voting System — DevOpsSec</div>
-  <div class="pdesc">A secure, role-based digital voting platform built with Django and deployed on <strong>AWS EC2</strong> with a fully automated GitHub Actions CI/CD pipeline — developed for the DevOpsSec module at NCI Dublin.</div>
-  <ul class="phi">
-    <li>Three-role RBAC system: Admin, Election Host, and Voter with enforced approval workflow</li>
-    <li>Ballot integrity guaranteed at the database level with a <code>unique_together</code> constraint</li>
-    <li>Full CI/CD: every push to main auto-deploys via GitHub Actions → EC2 → Gunicorn → Nginx</li>
-    <li>Security hardened: CSRF, PBKDF2-SHA256 hashing, Bandit, Flake8, and Pylint integrated</li>
-  </ul>
-  <div class="pfoot">
-    <span class="tag tg">Django</span><span class="tag tg">Python</span><span class="tag tg">AWS EC2</span>
-    <span class="tag tg">GitHub Actions</span><span class="tag tg">Nginx</span><span class="tag tg">Gunicorn</span>
-    <a href="https://github.com/ImaranMurshad/OnlineVotingSystem_Code.git" target="_blank" class="pgit">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-      View on GitHub ↗
-    </a>
-  </div>
-</div>
 
     <div class="pc p1 reveal">
       <div class="ph"><div class="pnum">PRJ — 006</div><div class="pico">🏫</div></div>
@@ -769,7 +760,7 @@
       <div class="pfoot">
         <span class="tag tp">ASP.NET</span><span class="tag tp">C#</span><span class="tag tp">SQL Server</span>
         <span class="tag tp">Crystal Reports</span><span class="tag tp">IIS</span>
-         <a href="https://github.com/ImaranMurshad/Academic-Management-System.git" target="_blank" class="pgit">
+         <a href="https://github.com/ImaranMurshad/Academic-Management-System.git" target="_blank" rel="noopener" class="pgit">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
       View on GitHub ↗
     </a>
@@ -789,7 +780,7 @@
       <div class="pfoot">
         <span class="tag tc">C#</span><span class="tag tc">.NET Framework</span><span class="tag tc">SQL Server</span>
         <span class="tag tc">Crystal Reports</span><span class="tag tc">WinForms</span>
-         <a href="https://github.com/ImaranMurshad/ERP-Billing-Suite-for-SMBs.git" target="_blank" class="pgit">
+         <a href="https://github.com/ImaranMurshad/ERP-Billing-Suite-for-SMBs.git" target="_blank" rel="noopener" class="pgit">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
       View on GitHub ↗
     </a>
@@ -802,8 +793,8 @@
       <div class="pdesc">Delivered at <strong>Capgemini</strong> for global enterprise clients — a set of production SAP ABAP programs handling reporting, document generation, and business process automation across critical enterprise workflows.</div>
       <ul class="phi">
         <li>10+ programs: ALV Reports, Smart Forms, Adobe Forms across multiple client projects</li>
-        <li>SAP HANA query optimisation — measurable performance gains across 15+ applications</li>
-        <li>Maintained live enterprise applications with strict SLA and zero-downtime requirements</li>
+        <li>SAP HANA query optimisation to improve application performance</li>
+        <li>Maintained and troubleshot 15+ live enterprise SAP applications</li>
         <li>Cross-functional collaboration with consultants, QA, and project leads throughout</li>
       </ul>
       <div class="pfoot">
@@ -811,23 +802,6 @@
         <span class="tag tr">ALV Reports</span><span class="tag tr">Adobe Forms</span>
       </div>
     </div>
-
-    <!-- <div class="pc p4 reveal">
-      <div class="ph"><div class="pnum">PRJ — 004</div><div class="pico">☁️</div></div>
-      <div class="ptitle">Cloud Infrastructure Projects (MSc)</div>
-      <div class="pdesc">Ongoing coursework at NCI Dublin — applying cloud computing concepts to practical architecture problems using <strong>AWS</strong>. The goal is to design, deploy, and secure systems that scale far beyond a single server.</div>
-      <ul class="phi">
-        <li>EC2 instance setup, networking, and SSH access control configuration</li>
-        <li>S3 bucket architecture for static hosting and lifecycle-managed storage</li>
-        <li>IAM policies and least-privilege role design for secure cloud access</li>
-        <li>DevOps fundamentals: pipelines, virtualisation, and cloud deployment models</li>
-      </ul>
-      <div class="pfoot">
-        <span class="tag tg">AWS EC2</span><span class="tag tg">S3</span><span class="tag tg">IAM</span>
-        <span class="tag tg">Cloud Security</span><span class="tag tg">DevOps</span>
-      </div>
-    </div> -->
-
   </div>
 </div>
 
@@ -841,10 +815,10 @@
   </div>
   <p class="reveal" style="color:var(--muted); font-size:0.86rem; max-width:480px; margin:0 auto 1.8rem; line-height:1.9;">
     I'm actively looking for <strong style="color:var(--text)">part-time Software Developer or Cloud Computing roles in Dublin</strong> 
-    (20 hrs/week) and internship opportunities. Whether you have a role, a project, or just want to connect — I'd love to hear from you.
+    (20 hrs/week) and internships now, and full-time roles from Jan 2027. Whether you have a role, a project, or just want to connect — I'd love to hear from you.
   </p>
   <div style="margin-bottom:2rem" class="reveal">
-    <span class="avail-badge"><span class="avail-dot"></span> Available Now · Dublin, Ireland · 20 hrs/week</span>
+    <span class="avail-badge"><span class="avail-dot"></span> Part-time &amp; internships now · Full-time from Jan 2027 · Dublin</span>
   </div>
   <div class="cc-grid reveal">
     <a href="mailto:imranmurshad16@gmail.com" class="cc">
@@ -855,11 +829,11 @@
       <span class="cc-ico">📞</span>
       <div><div class="cc-lbl">Phone</div><div class="cc-val">+353 83 201 5944</div></div>
     </a>
-    <a href="https://linkedin.com/in/YOUR-LINKEDIN-URL" target="_blank" class="cc">
+    <a href="https://linkedin.com/in/YOUR-LINKEDIN-URL" target="_blank" rel="noopener" class="cc">
       <span class="cc-ico">💼</span>
       <div><div class="cc-lbl">LinkedIn</div><div class="cc-val">Connect with me →</div></div>
     </a>
-    <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" class="cc">
+    <a href="https://github.com/ImaranMurshad" target="_blank" rel="noopener" class="cc">
       <span class="cc-ico">🐙</span>
       <div><div class="cc-lbl">GitHub</div><div class="cc-val">See my code →</div></div>
     </a>
